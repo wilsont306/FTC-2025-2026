@@ -258,7 +258,7 @@ public class leftrework extends LinearOpMode {
            Thread intakeThread2 = new Thread(() -> {
                servI.setPower(intakeP);
            });
-           intakeThread.start();
+           intakeThread2.start();
            Actions.runBlocking(
                    drive.actionBuilder(yellowSampleTwo)
                            .strafeToLinearHeading(yellowSampleTwoc.position, yellowSampleTwoc.heading)
